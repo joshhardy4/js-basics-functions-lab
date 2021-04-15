@@ -28,7 +28,7 @@ return (num2 - num1) *264
 }
 }
 function calculatesFarePrice(start, destination){  
-let travelled = distanceFromHqInFeet( start, destination)
+let travelled = distanceTravelledInFeet( start, destination)
 
     if (travelled <400) {
         return 0;
@@ -36,7 +36,7 @@ let travelled = distanceFromHqInFeet( start, destination)
  else if (travelled > 400 && travelled < 2000) {
     return (travelled - 400) *.02;
 } else if (travelled > 2001 && travelled <2500) {
-    return (travelled + 25);
+    return 25;
 } else if (travelled > 2500) {
     return 'cannot travel that far';
 }
